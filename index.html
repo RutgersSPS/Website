@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,66 +13,106 @@
 </head>
 
 <body>
-    <div id="particles-js"></div>
+    <div id="myScrollSpy">
+        <div id="particles-js"></div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-                <a class="navbar-brand" href="#"></a>
+                    <a class="navbar-brand bold" href="#" style="color: #a0a0a0;">RUTGERS SPS</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right bold" style="color: #a0a0a0;">
+                        <li><a href="#about" style="color: #a0a0a0;">ABOUT</a></li>
+                        <li><a href="#events" style="color: #a0a0a0;">EVENTS</a></li>
+                        <li><a href="#officers" style="color: #a0a0a0;">OFFICERS</a></li>
+                        <li><a href="#join" style="color: #a0a0a0;">JOIN</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">WHAT</a></li>
-                    <li><a href="#">WHERE</a></li>
-                </ul>
+        </nav>
+
+        <!-- First Container -->
+
+
+        <div class="container-fluid bg-1 text-center">
+
+            <div id="overlay">
+
+                <img src="assets/circle_logo_dark_v3-150x150_transparent.png" class="img-responsive img-circle margin" style="display:inline" alt="SPS" width="150" height="150">
+                <h1>Society of Physics Students</h1>
+                <h2>Rutgers University Chapter</h2>
+
             </div>
         </div>
-    </nav>
 
-    <!-- First Container -->
-
-
-    <div class="container-fluid bg-1 text-center">
-
-        <div id="overlay">
-            <h1 class="margin">Rutgers University</h1>
-            <img src="assets/circle_logo_dark_v3-150x150_transparent.png" class="img-responsive img-circle margin" style="display:inline" alt="SPS" width="150" height="150">
-            <h2>Society of Physics Students</h2>
-
+        <!-- Second Container -->
+        <div id="about" class="container-fluid bg-2 text-center">
+            <h3 class="margin">ABOUT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+        </a>
         </div>
-    </div>
 
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center">
-        <h3 class="margin">ABOUT</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-    </div>
-
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
-        <h3 class="margin">Where To Find Me?</h3><br>
-        <div class="row">
-            <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <!-- Third Container (Grid) -->
+        <div class="container-fluid bg-3 text-center">
+            <h3 class="margin">Officers</h3><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
             </div>
-            <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <!-- Third Container (Grid) -->
+        <div class="container-fluid bg-3 text-center">
+            <h3 class="margin">Officers</h3><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
             </div>
-            <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <!-- Third Container (Grid) -->
+        <div class="container-fluid bg-3 text-center">
+            <h3 class="margin">Officers</h3><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
+                <div class="col-sm-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+                </div>
             </div>
         </div>
     </div>
@@ -98,4 +138,37 @@
         });
     </script>
 </body>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript">
+    function landscapeStatus() {
+        if ($(window).height() <= $(window).width()) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+
+    function pageResize() {
+
+
+        $("#Logo").css("padding-top", $(window).height() * 1.5 / 8);
+        $("#Logo").height($(window).height() * 1.25 / 4);
+        $(".btn-circle").width($(".col-md-2").width() * .6);
+        $(".btn-circle").css("border-radius", $(".col-md-2").width() * .6 * .05);
+        $("#top").css("min-height", $(window).height() + 25);
+        //$(".shrink-a-bit").width($(window).width()*7/8);
+        $(".shrink-a-bit").css("padding-top", $(window).height() * 1 / 16);
+        $(".shrink-a-bit").css("padding-bottom", $(window).height() * 1 / 8);
+        $(".shrink-a-bit").css("padding-left", $(window).width() * 1 / 8);
+        $(".shrink-a-bit").css("padding-right", $(window).width() * 1 / 8);
+        $(".secTitle").css("padding-bottom", $(window).height() * 1 / 16)
+        $(".pentry").css("min-height", getTallestProject() + 7);
+        $(".rentry").css("min-height", getTallestResearch() + 7);
+        $(".stdImgSet").height($("#stdImg").height());
+    }
+
+    pageResize();
+</script>
+
 </html>
