@@ -36,7 +36,8 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 19px;
+
 }
 
 .margin {
@@ -49,6 +50,12 @@ h1 {
 
 h2 {
     font-size: 35;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 35;
+
 }
 
 .bg-1 {
@@ -61,12 +68,19 @@ h2 {
 
 }
 
+.bg-1 h1 {
+    font-size: 40;
+}
+
+.bg-1 h2 {
+    font-size: 35;
+}
 
 
 .bg-2 {
     background-color: #2f2f2f;
     /* Dark Blue */
-    color: #ffffff;
+    color: #d1d1d1;
 }
 
 .bg-3 {
@@ -76,7 +90,7 @@ h2 {
 }
 
 .bg-4 {
-    background-color: #e6e6e6;
+    background-color: #ebebeb;
     /* Black Gray */
     color: #272727;
 }
@@ -112,4 +126,10 @@ h2 {
 .bold {
     font-weight: bold;
     color: #a0a0a0;
+}
+
+.caption {
+    font-size: 16px;
+    text-align: center;
+    color: #272727;
 }
