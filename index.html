@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Rutgers University - Society of Physics Students</title>
     <meta charset="utf-8">
@@ -21,10 +22,10 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand bold" href="#" style="color: #a0a0a0;">RUTGERS SPS</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -45,7 +46,7 @@
 
             <div id="overlay">
 
-                <img src="assets/circle_logo_dark_v3-150x150_transparent.png" class="img-responsive img-circle margin" style="display:inline" alt="SPS" width="150" height="150">
+                <img src="assets/RUSPS_512.png" class="img-responsive img-circle margin" style="display:inline" alt="SPS" width="300" height="300">
                 <h1>Society of Physics Students</h1>
                 <h2>Rutgers University Chapter</h2>
 
@@ -57,13 +58,19 @@
             <h3 class="margin">ABOUT</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <a href="#" class="btn btn-default btn-lg">
-        <span class="glyphicon glyphicon-search"></span> Search
-        </a>
+                <span class="glyphicon glyphicon-envelope"></span> Sign Up
+            </a>
+        </div>
+        <!-- Second Container -->
+        <div id="events" class="container-fluid bg-4 text-center">
+            <h3 class="margin">EVENTS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
         </div>
 
         <!-- Third Container (Grid) -->
-        <div class="container-fluid bg-3 text-center">
-            <h3 class="margin">Officers</h3><br>
+        <div id="officers" class="container-fluid bg-3 text-center">
+            <h3 class="margin">OFFICERS</h3><br>
             <div class="row">
                 <div class="col-sm-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -79,41 +86,11 @@
                 </div>
             </div>
         </div>
-        <!-- Third Container (Grid) -->
-        <div class="container-fluid bg-3 text-center">
-            <h3 class="margin">Officers</h3><br>
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-                </div>
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-                </div>
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-                </div>
-            </div>
-        </div>
-        <!-- Third Container (Grid) -->
-        <div class="container-fluid bg-3 text-center">
-            <h3 class="margin">Officers</h3><br>
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-                </div>
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-                </div>
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-                </div>
-            </div>
+        <!-- Second Container -->
+        <div id="join" class="container-fluid bg-4 text-center">
+            <h3 class="margin">JOIN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
         </div>
     </div>
 
@@ -126,7 +103,7 @@
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
+            particlesJS.load('particles-js', 'config/particlesjs-config.json', function() {
                 console.log('callback - particles.js config loaded');
             });
             var update;
