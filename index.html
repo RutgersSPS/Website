@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mail_widget.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -66,8 +67,8 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-4">
-                    <img src="assets/schnetzer_talk_f2015.jpg" class="img-responsive" style="padding-bottom: 10px;" alt="SPS" />
-                    <p class="caption"> A talk on High Energy Physics given by Professor Schnetzer in Fall of 2015.</p>
+                    <img src="assets/schnetzer_talk_f2015.jpg" class="img-responsive img-thumbnail" style="border-radius:20px; border: 20px; padding:10px; box-shadow: 10px;" alt="SPS" />
+                    <p class="caption"> A talk on High Energy Physics given by Professor Schnetzer in fall of 2015</p>
                 </div>
                 <div class="col-md-4" style="text-align: left;">
 
@@ -90,7 +91,7 @@
         </div>
     </div>
     <!-- Second Container -->
-    <div id="events" class="container-fluid bg-2 text-center">
+    <div id="events" class="container-fluid text-center">
         <h2 class="margin">EVENTS</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
@@ -116,15 +117,83 @@
         </div>
     </div>
     <!-- Second Container -->
-    <div id="join" class="container-fluid bg-4 text-center">
+    <div id="join" class="container-fluid text-center">
         <h2 class="margin">JOIN</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h3>Join our mailing list by filling out the form below: </h3>
+        <br />
+        <div id="mlb2-1041558" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-1041558">
+            <div class="ml-form-align-center ">
+                <div class="ml-form-embedWrapper embedForm">
+                    <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                        <div class="ml-form-embedContent">
+                            <h4>Join the SPS Mailing List</h4>
+                            <p style="text-align: center;"><strong><span style="font-size: 20px;">For notifications about meetings, events, and more!</span></strong></p>
+                        </div>
+                        <form class="ml-block-form" action="https://app.mailerlite.com/webforms/submit/g3n8r0" data-code="g3n8r0" method="post" target="_blank">
+                            <style type="text/css">
+                                .ml_message_wrapper {
+                                    position: absolute !important;
+                                    left: -9999px !important;
+                                }
+                            </style>
+                            <div aria-label="Please leave the following field empty" class="ml_message_wrapper">
+                                <input type="text" name="ml_message" tabindex="-1" value="" placeholder="Message" autocomplete="off" title="message">
+                                <input type="text" name="ml_email" tabindex="-1" value="" placeholder="Email" autocomplete="off" title="email">
+                                <input type="text" name="ml_name" tabindex="-1" value="" placeholder="Name" autocomplete="off" title="name">
+                            </div>
+                            <div class="ml-form-formContent">
+                                <div class="ml-form-fieldRow ">
+                                    <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                        <input type="email" class="form-control" data-inputmask="" name="fields[email]" value="" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="ml-form-fieldRow ml-last-item">
+                                    <div class="ml-field-group ml-field-name">
+                                        <input type="text" class="form-control" data-inputmask="" name="fields[name]" value="" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="ml-submit" value="1">
+                            <div class="ml-form-embedSubmit">
+                                <button type="submit" class="primary">Subscribe</button>
+                                <button disabled="disabled" style="display: none;" type="button" class="loading btn btn-block">
+
+                                    <div class="ml-form-embedSubmitLoad">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ml-form-successBody row-success" style="display: none">
+                        <div class="ml-form-successContent">
+                            <h4>Thank you!</h4>
+                            <p style="text-align: center;"><span style="color: #ffffff;"><strong><span style="font-size: 20px;">You have successfully joined our subscriber list.</span></strong></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function ml_webform_success_1041558() {
+                var $ = ml_jQuery || jQuery;
+                $('.ml-subscribe-form-1041558 .row-success').show();
+                $('.ml-subscribe-form-1041558 .row-form').hide();
+            }
+        </script>
+        <img src="https://track.mailerlite.com/webforms/o/1041558/g3n8r0?vaa4d608450783acdc64d5338ff94f6d5" width="1" height="1" style="max-width: 1px; max-height: 1px; visibility: hidden; padding: 0; margin: 0; display: block;" border="0">
+        <script src="https://static.mailerlite.com/js/w/webforms.min.js?vaa4d608450783acdc64d5338ff94f6d5" type="text/javascript"></script>
+
 
     </div>
 
 
     <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
+    <footer class="container-fluid bg-2 text-center">
 
     </footer>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
