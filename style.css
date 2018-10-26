@@ -55,7 +55,10 @@ h2 {
 
 h3 {
     font-size: 35;
+}
 
+h5 {
+    font-size: 19px;
 }
 
 .bg-1 {
@@ -132,4 +135,18 @@ h3 {
     font-size: 16px;
     text-align: center;
     color: #272727;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cal-container {
+    background-color: #ffffff;
+    /* White */
+    border-radius: 20px;
+    padding-bottom: 70px;
+    padding-top: 35px;
+    color: #555555;
 }

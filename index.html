@@ -9,9 +9,56 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="mail_widget.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='assets/fullcalendar-3.9.0/lib/jquery.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='assets/fullcalendar-3.9.0/fullcalendar.min.css' rel='stylesheet' />
+    <link href='assets/fullcalendar-3.9.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='assets/fullcalendar-3.9.0/lib/moment.min.js'></script>
 
+    <script src='assets/fullcalendar-3.9.0/fullcalendar.min.js'></script>
+    <script src='assets/fullcalendar-3.9.0/gcal.min.js'></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#calendar').fullCalendar({
+
+                header: {
+                    left: 'prev,next today title',
+                    center: '',
+                    right: ''
+                },
+                defaultView: 'listYear',
+                displayEventTime: false, // don't show the time column in list view
+
+                // THIS KEY WON'T WORK IN PRODUCTION!!!
+                // To make your own Google API key, follow the directions here:
+                // http://fullcalendar.io/docs/google_calendar/
+                googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+
+                // US Holidays
+                events: 'en.usa#holiday@group.v.calendar.google.com',
+
+                eventClick: function(event) {
+                    // opens events in a popup window
+                    window.open(event.url, 'gcalevent', 'width=700,height=600');
+                    return false;
+                },
+
+                loading: function(bool) {
+                    $('#loading').toggle(bool);
+                }
+
+            });
+
+        });
+    </script>
+    <style>
+        #calendar {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -93,7 +140,10 @@
     <!-- Second Container -->
     <div id="events" class="container-fluid text-center">
         <h2 class="margin">EVENTS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="container cal-container">
+            <div id='calendar'></div>
+        </div>
+
 
     </div>
 
@@ -106,47 +156,60 @@
             <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>President</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
             <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>Vice President</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
             <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>Treasurer</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
             <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>Secretary</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-2"></div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>President</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>Vice President</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>Treasurer</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" style="padding-bottom: 20px">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" class="img-responsive img-circle img-thumbnail" style="width:80%; padding: 5px;" alt="Image">
                 <h3>First Lastname</h3>
+                <h5>Secretary</h5>
                 <p>email.me@rutgers.edu</p>
             </div>
         </div>
+        <br />
+        <a href="#join" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-link"></span> Former Officers
+        </a>
+
     </div>
     <!-- Second Container -->
     <div id="join" class="container-fluid text-center">
