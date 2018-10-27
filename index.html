@@ -24,11 +24,18 @@
             $('#calendar').fullCalendar({
 
                 header: {
-                    left: 'prev,next today title',
+                    left: 'prev,next today',
                     center: '',
-                    right: ''
+                    right: 'title'
                 },
-                defaultView: 'listYear',
+                buttonText: {
+                    today:    'Today',
+                    month:    'month',
+                    week:     'week',
+                    day:      'day',
+                    list:     'list'
+                },
+                defaultView: 'listMonth',
                 displayEventTime: false, // don't show the time column in list view
 
                 // THIS KEY WON'T WORK IN PRODUCTION!!!
@@ -139,8 +146,8 @@
     </div>
     <!-- Second Container -->
     <div id="events" class="container-fluid text-center">
-        <h2 class="margin">EVENTS</h2>
         <div class="container cal-container">
+            <h2 class="margin" style="font-weight:bold;">EVENTS</h2>
             <div id='calendar'></div>
         </div>
 
