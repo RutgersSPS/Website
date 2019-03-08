@@ -166,21 +166,43 @@ h5 {
     font-size: 16px;
     text-decoration: underline;
 }
-footer h6{
+
+footer h6 {
     font-size: 16px;
     color: #acacac;
 }
-.footer-link{
+
+.footer-link {
     padding: 0px;
     color: #acacac;
     font-size: 16px;
     text-decoration: underline;
 }
-.footer-link:hover{
+
+.footer-link:hover {
     color: #d1d1d1;
 }
-footer h2{
+
+center footer h2 {
     font-size: 24px;
     padding-bottom: 10px;
     font-weight: bold;
+}
+
+.event-text {
+    align-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.event-text-title {
+    align-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nopad {
+    padding: 0px;
 }
