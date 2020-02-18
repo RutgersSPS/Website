@@ -70,8 +70,14 @@
 
                 loading: function (bool) {
                     $('#loading').toggle(bool);
-                }
-
+                },
+                eventRender: function (event, element, view) {
+                    var eventEnd = moment(event.end);
+                    var NOW = moment();
+                    if (eventEnd.diff(NOW, 'seconds') <= 0) {
+                        return false;
+                    }
+                },
             });
 
         });
@@ -116,10 +122,10 @@
         <div class="container-fluid bg-1 text-center">
 
             <div id="overlay">
-                <br/> <br/>
+                <br /> <br />
                 <img src="assets/logo/png/RUSPS_Logo_512.png" class="img-responsive margin" style="display:inline"
                     alt="SPS" width="512" />
-                <br/> <br/>
+                <br /> <br />
 
                 <h1>Society of Physics Students</h1>
                 <h3>Rutgers University Chapter</h3>
@@ -189,8 +195,9 @@
                 <div class="col-sm-8">
                     <p class="event-text">The Society of Physics Students would like to welcome all new and returning
                         students this semester! We hope you enjoy all the exciting events we have planned for the
-                        upcoming year.<br /> <br/>
-                        <b>Directions to Room 330:</b> From the entrance to the Serin Physics Building (not the Physics Lecture Hall) closest to the Allison Road Classrooms
+                        upcoming year.<br /> <br />
+                        <b>Directions to Room 330:</b> From the entrance to the Serin Physics Building (not the Physics
+                        Lecture Hall) closest to the Allison Road Classrooms
                         (ARC), go up one flight of stairs to the third floor and follow signs for room 330.
 
                     </p>
